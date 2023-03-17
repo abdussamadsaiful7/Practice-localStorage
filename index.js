@@ -5,7 +5,9 @@ const addLocalStorage=()=>{
     const inputValue = document.getElementById('storage-value');
     const value = inputValue.value;
 
-    localStorage.setItem(id, value);
+    if(id && value){
+        localStorage.setItem(id, value);
+    }
     inputId.value = '';
     inputValue .value = '';
 
@@ -16,4 +18,5 @@ const addLocalStorage=()=>{
     }
     
     */
-}
+}   
+
